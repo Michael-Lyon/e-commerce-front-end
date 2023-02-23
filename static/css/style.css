@@ -374,6 +374,7 @@ main {
 
 #sm-banner {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 50px 0;
