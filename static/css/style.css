@@ -194,10 +194,10 @@ main {
 
 
 #feature {
-    width: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 
 }
@@ -256,7 +256,7 @@ main {
 /* PRODUCT1 */
 #product1 {
     text-align: center;
-    width: 100%;
+    width: 90%;
     /* margin: 50px 0; */
 }
 
@@ -264,9 +264,10 @@ main {
 #product1 .pro-container {
     width: 100%;
     flex-wrap: wrap;
+    gap: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 
@@ -373,7 +374,6 @@ main {
 
 #sm-banner {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     flex-wrap: wrap;
     margin: 50px 0;
@@ -387,7 +387,7 @@ main {
     align-items: flex-start;
     text-align: center;
     background-image: url("../img/banner/b17.jpg");
-    min-width: 100% ;
+    min-width: 825px;
     height: 50vh;
     background-size: cover;
     background-position: center;
