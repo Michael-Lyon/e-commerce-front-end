@@ -194,10 +194,10 @@ main {
 
 
 #feature {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 
 }
@@ -256,7 +256,7 @@ main {
 /* PRODUCT1 */
 #product1 {
     text-align: center;
-    width: 90%;
+    width: 100%;
     /* margin: 50px 0; */
 }
 
@@ -264,10 +264,9 @@ main {
 #product1 .pro-container {
     width: 100%;
     flex-wrap: wrap;
-    gap: 40px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
