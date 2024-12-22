@@ -12,6 +12,11 @@ html {
     scroll-behavior: smooth;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 /* Global Styles */
 
 h1 {
@@ -133,13 +138,17 @@ button.white {
     color: #088179;
 }
 
+#mobile {
+    display: none;
+}
+
 
 
 
 /* HERO SECTION */
 #hero {
     height: 90vh;
-    background-image: url("../img/hero4.png");
+    background-image: url("../img/hero4.jpg");
     background-position: top 25% right 0;
     background-size: cover;
     padding: 0 80px;
@@ -207,7 +216,7 @@ main {
     text-align: center;
     padding: 25px 15px;
     border: 1px solid #cced7c;
-    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.082);
+    /* box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.082); */
     border-radius: 4px;
     margin: 15px 0;
 }
@@ -223,7 +232,8 @@ main {
     margin-bottom: 25px;
 }
 
-#feature .fe-box h6 {
+
+/* #feature .fe-box h6 {
     display: inline-block;
     padding: 9px 8px 6px 8px;
     line-height: 1;
@@ -250,7 +260,7 @@ main {
 
 #feature .fe-box:nth-child(6) h6 {
     background-color: #fff2e5;
-}
+} */
 
 
 /* PRODUCT1 */
@@ -352,12 +362,12 @@ main {
 }
 
 #banner h4 {
-    color: #fff;
+    color: #D26D55;
     font-size: 16px;
 }
 
 #banner h2 {
-    color: #fff;
+    color: #D26D55;
     font-size: 30px;
     padding: 10px 0;
 }
@@ -366,9 +376,9 @@ main {
     color: #fb774b;
 }
 
-.case {
+/* .case {
     width: 90%;
-}
+} */
 
 #sm-banner {
     display: flex;
@@ -386,11 +396,9 @@ main {
     align-items: flex-start;
     text-align: center;
     background-image: url("../img/banner/b17.jpg");
-    /* width: 90%; */
     height: 50vh;
     background-size: cover;
     background-position: center;
-
 }
 
 
@@ -430,12 +438,14 @@ main {
 #banner3 {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
 }
 
 
 #banner3 .banner-box {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: flex-start;
     text-align: center;
     background-image: url("../img/banner/b18.jpg");
@@ -484,7 +494,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     margin-bottom: 20px;
-    background-position: 10% 5%;
+    background-position: 20% 30%;
     background-color: #041e42;
 }
 
@@ -534,71 +544,74 @@ main {
     border-bottom-left-radius: 0;
 }
 
-.footer {
+footer {
     display: flex;
-    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
-.footer .col {
+footer .col {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     margin-bottom: 20px;
 }
 
-.footer .col .logo {
+footer .logo {
     margin-bottom: 34px;
 }
 
 
-.footer h4 {
+footer h4 {
     font-size: 14px;
     padding-bottom: 23px;
 }
 
-.footer p {
+footer p {
     font-size: 14px;
-    margin-bottom: 8px;
+    margin: 0 0 8px 0;
 }
-.footer p i{
+
+footer p i {
     padding: 8px;
 }
 
-.footer a {
+footer a {
     text-decoration: none;
     font-size: 13px;
     color: rgb(95, 80, 80);
     margin-bottom: 10px;
 }
 
-.footer .follow {
+footer .follow {
     margin-top: 10px
 }
-.footer img{
+
+footer img {
     margin: 10px 0 15px 0;
 }
 
-.footer .row img{
+footer .install .row img {
     border: 1px solid #088178;
     border-radius: 6px;
 }
 
 
-.footer .follow i  {
+footer .follow i {
     cursor: pointer;
     margin-top: 10px;
     padding-right: 26px;
 
 }
 
-.copyright{
+
+.copyright {
     text-align: center;
 }
 
-.footer i:hover, .footer a:hover{
+footer i:hover,
+footer a:hover {
     color: #088178;
 }
 
@@ -606,10 +619,151 @@ main {
 /* MEDIA QUERY */
 
 
+@media screen and (max-width: 799px) {
+    #nav-bar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        height: 100vh;
+        width: 300px;
+        background-color: #E3E6F3;
+        box-shadow: 0 40px 40px rgba(243, 181, 25, 0.1);
+        padding: 80px 0 0 30px;
+        transition: 0.9;
+    }
+
+    #nav-bar li {
+        margin-bottom: 25px;
+    }
+
+    #mobile {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        z-index: 999;
+    }
+
+    #mobile i {
+        font-size: 24px;
+        padding-left: 20px;
+    }
+
+    #hero {
+        height: 70vh;
+        background-position: top 30% right 30%;
+    }
+
+    #feature {
+        justify-content: center;
+    }
+
+    #feature .fe-box {
+        margin: 15px 15px;
+    }
+
+    #product1 .pro-container {
+        justify-content: center;
+    }
+
+    #product1 .pro {
+        margin: 30px;
+    }
+
+    #banner {
+        height: 20vh;
+    }
+
+    #sm-banner .banner-box {
+        min-width: 100%;
+        height: 30vh;
+        background-position: top 10% right 60%;
+    }
+
+    #banner3 {
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    #banner3 .banner-box {
+        width: 10%;
+    }
+
+    #newsletter {
+        align-items: flex-start;
+    }
+
+    #newsletter .form {
+        display: flex;
+        width: 100%;
+    }
+}
+
+@media (max-width: 477px) {
+    .section-p1 {
+        padding: 20px;
+    }
+
+    #header {
+        padding: 10px 10px;
+    }
+
+    #hero {
+        height: 70vh;
+        padding: 0 20px;
+        background-position: 55%;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    #feature .fe-box {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    #banner {
+        width: 100%;
+    }
+
+    #banner h2 {
+        color: #D26D55;
+        font-size: 15px;
+        padding: 3px 0;
+    }
+
+    #feature .fe-box {
+        width: 100px;
+    }
+
+    #feature .fe-box img {
+        display: inline-block;
+        width: 80px;
+        margin-bottom: 25px;
+    }
+
+    button.normal {
+        font-size: 12px;
+        font-weight: 600;
+        padding: 15px 15px;
+    }
+
+}
+
+
+
 
 
 @media screen and (max-width: 625px) {
-    .banner-box{
+    .banner-box {
         width: 500px;
     }
 
@@ -620,11 +774,9 @@ main {
         justify-content: space-around;
     }
 
-    #product1 .pro{
+    #product1 .pro {
         width: 200px;
-        
     }
-    
 }
 
 @media screen and (max-width: 400px) {
@@ -640,9 +792,9 @@ main {
         flex-wrap: nowrap;
         justify-content: space-between;
     }
+
     #sm-banner .banner-box {
         padding: 1%;
         width: 820px;
-        
     }
 }
